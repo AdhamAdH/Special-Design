@@ -30,7 +30,7 @@ function randomizeImg() {
       // Generate a random index to select an image from the array
       let rand = Math.floor(Math.random() * imgArr.length);
       // Update the background image of the landing element
-      landing.style.backgroundImage = `url(${imgArr[rand]})`;
+      landing.style.backgroundImage = `url("${imgArr[rand]}")`;
     }, 3000);
   }
 }
