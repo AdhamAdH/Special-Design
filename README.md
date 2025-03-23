@@ -47,4 +47,4 @@ Users can:
 This project demonstrates the power of modern web technologies to create beautiful, customizable user experiences without relying on heavy frameworks. It's designed to showcase front-end development skills while providing a practical, user-friendly interface. As a self-directed practice project, it reflects my commitment to learning and implementing web development best practices.
 
 ## Live Demo
-[View the live demo](#) 
+[View the live demo](https://adhamadh.github.io/Special-Design/) 
