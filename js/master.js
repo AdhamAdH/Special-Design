@@ -10,7 +10,11 @@ let toggleMenuButton = document.querySelector(".toggleMenu");
 let navLinks = document.querySelector("nav ul");
 
 // Background Image Configuration
-let imgArr = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
+let imgArr = ["https://raw.githubusercontent.com/AdhamAdH/Special-Design/refs/heads/main/images/1.jpg",
+              "https://raw.githubusercontent.com/AdhamAdH/Special-Design/refs/heads/main/images/2.jpg",
+              "https://raw.githubusercontent.com/AdhamAdH/Special-Design/refs/heads/main/images/3.jpg",
+              "https://raw.githubusercontent.com/AdhamAdH/Special-Design/refs/heads/main/images/4.jpg",
+              "https://raw.githubusercontent.com/AdhamAdH/Special-Design/refs/heads/main/images/5.jpg"];
 let bgOption = true;
 let backgroundInterval;
 
@@ -26,7 +30,7 @@ function randomizeImg() {
       // Generate a random index to select an image from the array
       let rand = Math.floor(Math.random() * imgArr.length);
       // Update the background image of the landing element
-      landing.style.backgroundImage = `url("../images/${imgArr[rand]}")`;
+      landing.style.backgroundImage = `url(${imgArr[rand]})`;
     }, 3000);
   }
 }
