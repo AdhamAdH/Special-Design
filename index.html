@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Special Design</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/master.css" />
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <div class="logo">Special Design</div>
+      <nav>
+        <ul>
+          <li><a href="#landing" class="active">Home</a></li>
+          <li><a href="#aboutUs">About Us</a></li>
+          <li><a href="#ourSkills">Our Skills</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#timeLine">Time Line</a></li>
+          <li><a href="#features">Features</a></li>
+        </ul>
+        <button class="toggleMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+    <!-- end header -->
+    <!-- start setting -->
+    <div id="setting" class="setting">
+      <div id="gear" class="gear">
+        <i id="gearIcon" class="fa-solid fa-gear"></i>
+      </div>
+      <div class="setting-container">
+        <article>
+          <h2>Color Options</h2>
+          <ul class="colors">
+            <li class="active" data-color="#673ab7"></li>
+            <li data-color="#ad1457"></li>
+            <li data-color="#0d47a1"></li>
+            <li data-color="#2e7d32"></li>
+            <li data-color="#f9a825"></li>
+          </ul>
+        </article>
+        <article>
+          <h2>Random Backgrounds</h2>
+          <div class="choise">
+            <div class="yes active" data-random="yes">Yes</div>
+            <div class="no" data-random="no">No</div>
+          </div>
+        </article>
+        <article>
+          <h2>Enable Bullets</h2>
+          <div class="bulletChoise">
+            <div class="yes active" data-bullet="yes">Yes</div>
+            <div class="no" data-bullet="no">No</div>
+          </div>
+        </article>
+        <div id="reset" class="reset">Reset</div>
+      </div>
+    </div>
+    <!-- end setting -->
+    <!-- start bullets -->
+    <div class="bullets">
+      <div class="bullet" data-scroll=".aboutUs">
+        <div class="toolTip">About Us</div>
+      </div>
+      <div class="bullet" data-scroll=".ourSkills">
+        <div class="toolTip">Our Skills</div>
+      </div>
+      <div class="bullet" data-scroll=".gallery">
+        <div class="toolTip">Gallery</div>
+      </div>
+      <div class="bullet" data-scroll=".timeLine">
+        <div class="toolTip">Time Line</div>
+      </div>
+    </div>
+    <!-- end bullets -->
+    <!-- start landing -->
+    <section id="landing" class="landing">
+      <div class="overlay"></div>
+      <div class="container">
+        <h1>Create <span>Beautiful</span> Experiences.</h1>
+        <p>
+          Discover a platform that puts design control in your hands. Our
+          intuitive customization tools let you personalize colors, backgrounds,
+          and more with just a few clicks. Experience the perfect blend of
+          stunning aesthetics and powerful functionality that adapts to your
+          unique style.
+        </p>
+      </div>
+    </section>
+    <!-- end landing -->
+    <!-- start about us -->
+    <section id="aboutUs" class="aboutUs">
+      <h1 class="specialHeading">About Us</h1>
+      <article class="content container">
+        <p>
+          We are a passionate team of designers and developers dedicated to
+          creating beautiful, customizable web experiences. Our platform
+          combines elegant design with powerful personalization options,
+          allowing you to make the web truly your own. With years of experience
+          in digital innovation, we strive to deliver solutions that are both
+          visually stunning and functionally intuitive.
+        </p>
+        <div class="image">
+          <img src="/images/a285f9ed-b933-43ae-8f28-283ddfbad981.png" />
+        </div>
+      </article>
+    </section>
+    <!-- end about us -->
+    <!-- start our skiles -->
+    <section id="ourSkills" class="ourSkills">
+      <h1 class="specialHeading">Our Skills</h1>
+      <article class="content container">
+        <div class="skill">
+          <h2>HTML</h2>
+          <div class="progress">
+            <span data-progress="90%"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h2>CSS</h2>
+          <div class="progress">
+            <span data-progress="75%"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h2>JavaScript</h2>
+          <div class="progress">
+            <span data-progress="80%"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h2>Pithon</h2>
+          <div class="progress">
+            <span data-progress="40%"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h2>React</h2>
+          <div class="progress">
+            <span data-progress="70%"></span>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- end our skiles -->
+    <!-- Start Gallery -->
+    <section id="gallery" class="gallery">
+      <h1 class="specialHeading">Gallery</h1>
+      <article class="container">
+        <img src="/images/1.jpg" alt="Modern computer workstation" />
+        <img src="/images/2.jpg" alt="Smart home technology" />
+        <img src="/images/3.jpg" alt="Software development" />
+        <img src="/images/4.jpg" alt="Robotics and AI" />
+        <img src="/images/5.jpg" alt="Virtual reality technology" />
+      </article>
+    </section>
+    <!-- end Gallery -->
+    <!-- start time line -->
+    <section id="timeLine" class="timeLine">
+      <h1 class="specialHeading">Time Line</h1>
+      <article class="container">
+        <div class="year">2018</div>
+        <div class="left">
+          <div class="content">
+            <h3>Company Vision</h3>
+            <p>
+              We established our core design principles and brand identity,
+              focusing on creating intuitive, accessible, and visually striking
+              digital experiences that would set the foundation for all our
+              future work.
+            </p>
+          </div>
+        </div>
+        <div class="clearFix"></div>
+        <div class="right">
+          <div class="content">
+            <h3>Company Founded</h3>
+            <p>
+              Our journey began in 2018 when we established our design studio
+              with a vision to create beautiful, customizable web experiences
+              that empower users to express their unique style.
+            </p>
+          </div>
+        </div>
+        <div class="clearFix"></div>
+        <div class="year">2020</div>
+        <div class="left">
+          <div class="content">
+            <h3>Platform Launch</h3>
+            <p>
+              After two years of development, we launched our core platform,
+              introducing innovative customization features that allow users to
+              personalize their digital experience with unprecedented ease and
+              flexibility.
+            </p>
+          </div>
+        </div>
+        <div class="clearFix"></div>
+        <div class="right">
+          <div class="content">
+            <h3>Global Expansion</h3>
+            <p>
+              We expanded our reach to international markets, bringing our
+              design solutions to clients across Europe and Asia. This growth
+              allowed us to incorporate diverse cultural influences into our
+              design philosophy.
+            </p>
+          </div>
+        </div>
+        <div class="clearFix"></div>
+        <div class="year">2022</div>
+        <div class="left">
+          <div class="content">
+            <h3>Advanced AI Integration</h3>
+            <p>
+              We revolutionized our platform by integrating AI-powered design
+              assistance, enabling users to create sophisticated layouts and
+              color schemes with intelligent recommendations based on their
+              preferences.
+            </p>
+          </div>
+        </div>
+        <div class="clearFix"></div>
+        <div class="right">
+          <div class="content">
+            <h3>Community Milestone</h3>
+            <p>
+              Our user community reached 100,000 members, creating a vibrant
+              ecosystem of designers sharing templates, tips, and inspiration.
+              This collaborative environment has become a cornerstone of our
+              platform's success.
+            </p>
+          </div>
+        </div>
+        <div class="clearFix"></div>
+        <div class="year">2023</div>
+        <div class="left">
+          <div class="content">
+            <h3>Sustainability Initiative</h3>
+            <p>
+              We launched our "Green Design" program, focusing on creating
+              digital experiences that minimize environmental impact through
+              efficient code and optimized resource usage, aligning our
+              technical innovation with ecological responsibility.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- end time line -->
+    <!-- start features -->
+    <section id="features" class="features">
+      <h1 class="specialHeading">Features</h1>
+      <article class="container">
+        <div class="featBox">
+          <img src="images/f1.jpg" alt="" />
+          <h4>Development</h4>
+          <p>Powerful design tools that bring your creative vision to life.</p>
+        </div>
+        <div class="featBox">
+          <img src="images/f2.jpg" alt="" />
+          <h4>Customization</h4>
+          <p>
+            Personalize every aspect of your design with intuitive controls.
+          </p>
+        </div>
+
+        <div class="featBox">
+          <img src="images/f3.jpg" alt="" />
+          <h4>Responsive Design</h4>
+          <p>
+            Seamless experiences across all devices, from desktop to mobile.
+          </p>
+        </div>
+
+        <div class="featBox">
+          <img src="images/f4.jpg" alt="" />
+          <h4>Performance</h4>
+          <p>Optimized code ensures your site loads quickly every time.</p>
+        </div>
+
+        <div class="featBox">
+          <img src="images/f5.jpg" alt="" />
+          <h4>Support</h4>
+          <p>Our dedicated team is always ready to help you.</p>
+        </div>
+
+        <div class="featBox">
+          <img src="images/f6.jpg" alt="" />
+          <h4>Analytics</h4>
+          <p>Data-driven insights to help your business grow and succeed.</p>
+        </div>
+        <div class="clearFix"></div>
+      </article>
+    </section>
+    <!-- end features -->
+    <!-- start testimonials -->
+    <section class="testimonials">
+      <h1 class="specialHeading">Testimonials</h1>
+      <div class="container">
+        <div class="box">
+          <p>
+            This platform completely transformed our company's website. The
+            customization options are intuitive and powerful, allowing us to
+            create a unique brand presence online.
+          </p>
+          <div class="info">
+            <img src="images/avatar1.jpg" alt="Sarah Johnson" />
+            <div class="text">
+              <h4>Sarah Johnson</h4>
+              <p>Marketing Director</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <p>
+            As a freelance designer, I've tried many platforms, but this one
+            stands out for its flexibility and ease of use. The color
+            customization tools are particularly impressive.
+          </p>
+          <div class="info">
+            <img src="images/avatar2.jpg" alt="Michael Chen" />
+            <div class="text">
+              <h4>Michael Chen</h4>
+              <p>UX Designer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <p>
+            The responsive design features saved our team countless hours of
+            development time. Our website now looks perfect on every device, and
+            our clients are thrilled with the results.
+          </p>
+          <div class="info">
+            <img src="images/avatar3.jpg" alt="Emily Rodriguez" />
+            <div class="text">
+              <h4>Emily Rodriguez</h4>
+              <p>Tech Startup Founder</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearFix"></div>
+    </section>
+    <!-- end testimonials -->
+    <!-- start contact us -->
+    <section class="contactUs">
+      <div class="overlay"></div>
+      <h1 class="specialHeading">Contact Us</h1>
+      <div class="container">
+        <form action="">
+          <div class="left">
+            <input type="text" placeholder="Your Name" name="name" />
+            <input type="email" placeholder="Your Email" name="email" />
+            <input
+              type="number"
+              placeholder="Your Phone number"
+              name="phoneNumber"
+            />
+            <input type="text" placeholder="Your Subject" name="subject" />
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- end contact us -->
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>Special Design</h3>
+            <p>Create beautiful experiences that adapt to your unique style.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#landing">Home</a></li>
+              <li><a href="#aboutUs">About Us</a></li>
+              <li><a href="#ourSkills">Our Skills</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#timeLine">Time Line</a></li>
+              <li><a href="#features">Features</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <p>
+              <i class="fa-solid fa-location-dot"></i> Draikesh, Tartous, Syria
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +963 988 546 961</p>
+            <p><i class="fa-solid fa-envelope"></i> adhamadabdo@gmail.com</p>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Subscribe to receive updates and special offers</p>
+            <form>
+              <input type="email" placeholder="Your Email Address" />
+              <button type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 Special Design. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end footer -->
+    <script src="./js/master.js"></script>
+  </body>
+</html>
